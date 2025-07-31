@@ -16,7 +16,7 @@ const serviceAccount = {
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: `https://${serviceAccount.project_id}-default-rtdb.firebaseio.com/`, // 🔁 Use RTDB URL
+  databaseURL: `https://${serviceAccount.project_id}-default-rtdb.firebaseio.com/`, //  Use RTDB URL
 });
 
 const db = admin.database();
