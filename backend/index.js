@@ -4,6 +4,12 @@ const { admin, db } = require('./config/firebaseAdmin');
 const app = express();
 const PORT = 4000;
 
+// Make public folder accessible in browser
+app.use(express.static('public'));
+
+// Import Home handler
+const homePage = require("./routes/home/homePage");
+
 // Import Users handlers
 const getUsers = require("./routes/users/getUsers");
 const postUser = require("./routes/users/postUser");
@@ -24,9 +30,10 @@ const deleteIncome = require("./routes/income/deleteIncome");
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('API is running...');
-});
+
+///// Homepage routes
+app.get('/', homePage);
+
 
 // Users routes
 app.get("/users", getUsers);
