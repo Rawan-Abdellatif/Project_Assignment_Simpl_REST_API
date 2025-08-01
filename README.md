@@ -230,7 +230,12 @@ Use **Insomnia** or **Postman** to test the following endpoints:
 * Firebase Admin SDK
 * Firebase Realtime Database
 * Nodemon
-* Insomnia / Postman
+* Insomnia 
+
+---
+
+![HomePage](HomePage.png)
+
 
 ---
 
