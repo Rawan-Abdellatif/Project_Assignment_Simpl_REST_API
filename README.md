@@ -7,6 +7,10 @@ This project is a beginner-friendly REST API built using **Node.js**, **Express*
 
 ---
 
+![HomePage](HomePage.png)
+
+---
+
 ##  Features
 
 ### User Management
@@ -234,7 +238,6 @@ Use **Insomnia** or **Postman** to test the following endpoints:
 
 ---
 
-![HomePage](HomePage.png)
 
 
 ---
