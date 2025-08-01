@@ -234,7 +234,7 @@ Use **Insomnia** or **Postman** to test the following endpoints:
 
 ---
 
-## 🙋 Author
+## 🙋‍♀️ Author
 
 **Rawan Abdellatif**
 GitHub: [@Rawan-Abdellatif](https://github.com/Rawan-Abdellatif)
