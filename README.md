@@ -213,7 +213,27 @@ Use **Insomnia** or **Postman** to test the following endpoints:
 
 ---
 
-##  Example JSON Body (Income or Expense)
+
+## Example JSON Body (User)
+
+```json
+{
+    "id" : "1",
+    "name": "Rawan Abdellatif",
+    "username": "Rawan ",
+    "email": "rawan.k.abdellatif@gmail.com",
+    "address": {
+      "city": "Calgary",
+      "street": "950 Arbour Lake RD",
+      "suite": "104",
+      "zipcode": "T3G5B3"
+    }
+ 
+}
+```
+
+
+## Example JSON Body (Income)
 
 ```json
 {
@@ -224,6 +244,58 @@ Use **Insomnia** or **Postman** to test the following endpoints:
   "others": 900
 }
 ```
+
+## Example JSON Body (Expenses)
+
+```json
+{
+  "id": "1",
+  "Housing": {
+    "Rent": 600,
+    "maintainance": 100,
+    "rent insurance": 400,
+    "storage and parking": 500,
+    "utilities": 200
+  },
+  "Insurance": {
+    "health insurance": 600,
+    "life insurance": 400,
+    "others": 300
+  },
+  "Payment Obligations": {
+    "Line of credit": 1000,
+    "Loan": 6000,
+    "credit card": 500,
+    "vehicle lease": 200
+  },
+  "Personal": {
+    "Hobbies": 200,
+    "Personal grooming": 100,
+    "clothing": 60,
+    "dining out": 300,
+    "gifts - family": 40,
+    "others": 60,
+    "transportation": 50
+  },
+  "Savings": {
+    "Bonds": 200,
+    "Investment Savings": 4000,
+    "Long-term savings": 5000,
+    "Others": 500,
+    "RRSP": 1000
+  },
+  "Utilities": {
+    "Cable": 200,
+    "Electricity": 400,
+    "Heat": 100,
+    "Internet": 300,
+    "others": 150,
+    "phone": 600,
+    "water": 400
+  }
+}
+```
+
 
 ---
 
