@@ -18,14 +18,13 @@ const getIncome = async (req, res) => {
       return res.status(200).json({ success: true, data: [] });
     }
 
-    // Convert the income object into an array of income entries
-    const incomeList = Object.values(incomeData);
+  
 
     // Send successful response with income list
-    res.status(200).json({
-      success: true,
-      data: incomeList
-    });
+    const firstIncomeEntry = Object.values(incomeData)[0];
+res.status(200).json(firstIncomeEntry);
+
+
 
   } catch (error) {
     // Log and return error response in case of failure

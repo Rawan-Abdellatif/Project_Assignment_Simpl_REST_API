@@ -14,14 +14,10 @@ const getUsers = async (req, res) => {
       return res.status(404).json({ success: false, message: 'No users found.' });
     }
 
-    // Convert the users object into an array format
-    const usersList = Object.entries(users).map(([id, user]) => ({
-      id,       // Include the unique user ID
-      ...user   // Spread all other user fields
-    }));
 
-    // Return the array of users with a 200 OK status
-    res.status(200).json({ success: true, data: usersList });
+
+    // Return the raw users object 
+res.status(200).json(users);
 
   } catch (error) {
     // Handle unexpected errors and log them

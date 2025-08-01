@@ -17,12 +17,26 @@ const getExpenses = async (req, res) => {
       });
     }
 
+    // Extract the first expense entry's [id, data]
+const [firstId, firstExpense] = Object.entries(data)[0];
+
+// Combine id with the expense data
+const result = {
+  id: firstId,
+  ...firstExpense
+};
+
+// Return it
+return res.status(200).json(
+ result
+);
+
     // Return the full data object (with expense IDs as keys)
-    return res.status(200).json({
-      success: true,
-      message: 'Expenses retrieved successfully.',
-      data  
-    });
+    // return res.status(200).json({
+    //   success: true,
+    //   message: 'Expenses retrieved successfully.',
+    //   data  
+    // });
   } catch (error) {
 
     // If an error occurs, log it and return a 500 error response
