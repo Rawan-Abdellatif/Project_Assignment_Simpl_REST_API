@@ -151,11 +151,11 @@ The app serves a simple homepage at:
 
 Static files are served from the `public/` folder using:
 
-```js
+```
 app.use(express.static('public'));
 ```
 
-You can add HTML, CSS, and images to the `public/` directory.
+You can add  images to the `public/` directory.
 
 ---
 
@@ -163,7 +163,7 @@ You can add HTML, CSS, and images to the `public/` directory.
 
 Validation ensures all required fields are provided:
 
-* **Users:** `firstName`, `lastName`, `email`
+* **Users:** `userName`, `name`, `email`
 * **Income & Expenses:** `wages`, `saving`, `paymentObligation`, etc.
 
 If fields are missing, the API responds with an error message.
